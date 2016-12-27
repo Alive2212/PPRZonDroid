@@ -39,7 +39,7 @@
         android:title="@string/pref_header_socket"
         android:key="pref_header_socket">
             <EditTextPreference
-                android:key="server_ip_adress_text"
+                android:key="server_ip_address_text"
                 android:title="@string/pref_ip_address_title"
                 android:summary="Ip adress of pc that server is running at"
                 android:defaultValue="@string/pref_ip_address_default"
@@ -94,6 +94,233 @@
             android:maxLines="1" />
 
     </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Home"
+        android:key="pref_header_socket">
+        <EditTextPreference
+            android:key="home_latitude"
+            android:title="Latitude"
+            android:defaultValue="@string/home_latitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="home_longitude"
+            android:title="Longitude"
+            android:defaultValue="@string/home_longitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="home_altitude"
+            android:title="Altitude"
+            android:defaultValue="@string/home_altitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="STDBY"
+        android:key="pref_header_socket">
+        <EditTextPreference
+            android:key="stdby_latitude"
+            android:title="Latitude"
+            android:defaultValue="@string/stdby_latitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="stdby_longitude"
+            android:title="Longitude"
+            android:defaultValue="@string/stdby_longitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="stdby_altitude"
+            android:title="Altitude"
+            android:defaultValue="@string/stdby_altitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Climb"
+        android:key="pref_header_socket">
+        <EditTextPreference
+            android:key="climb_latitude"
+            android:title="Latitude"
+            android:defaultValue="@string/climb_latitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="climb_longitude"
+            android:title="Longitude"
+            android:defaultValue="@string/climb_longitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="climb_altitude"
+            android:title="Altitude"
+            android:defaultValue="@string/climb_altitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="MOB"
+        android:key="pref_header_socket">
+        <EditTextPreference
+            android:key="mob_latitude"
+            android:title="Latitude"
+            android:defaultValue="@string/mob_latitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="mob_longitude"
+            android:title="Longitude"
+            android:defaultValue="@string/mob_longitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="mob_altitude"
+            android:title="Altitude"
+            android:defaultValue="@string/mob_altitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="TD"
+        android:key="pref_header_socket">
+        <EditTextPreference
+            android:key="td_latitude"
+            android:title="Latitude"
+            android:defaultValue="@string/td_latitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="td_longitude"
+            android:title="Longitude"
+            android:defaultValue="@string/td_longitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="td_altitude"
+            android:title="Altitude"
+            android:defaultValue="@string/td_altitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="AF"
+        android:key="pref_header_socket">
+        <EditTextPreference
+            android:key="af_latitude"
+            android:title="Latitude"
+            android:defaultValue="@string/af_latitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="af_longitude"
+            android:title="Longitude"
+            android:defaultValue="@string/af_longitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="af_altitude"
+            android:title="Altitude"
+            android:defaultValue="@string/af_altitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="S1"
+        android:key="pref_header_socket">
+        <EditTextPreference
+            android:key="s1_latitude"
+            android:title="Latitude"
+            android:defaultValue="@string/s1_latitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="s1_longitude"
+            android:title="Longitude"
+            android:defaultValue="@string/s1_longitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="s1_altitude"
+            android:title="Altitude"
+            android:defaultValue="@string/s1_altitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="S2"
+        android:key="pref_header_socket">
+        <EditTextPreference
+            android:key="s2_latitude"
+            android:title="Latitude"
+            android:defaultValue="@string/s2_latitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="s2_longitude"
+            android:title="Longitude"
+            android:defaultValue="@string/s2_longitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <EditTextPreference
+            android:key="s2_altitude"
+            android:title="Altitude"
+            android:defaultValue="@string/s2_altitude"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+
 
 
 </PreferenceScreen>

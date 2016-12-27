@@ -30,4 +30,8 @@
 
     <string name="pref_default_airspeed">10</string>
 
+    <string name="app_control_create_new_shape_off">Create New Plane</string>
+    <string name="app_control_create_new_shape_on">Close Edit Mode</string>
+
+
 </resources>

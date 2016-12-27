@@ -1,110 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
-    <Button
-        android:layout_width="fill_parent"
+    <ToggleButton
+        android:text="Create Plane"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Re-Connect to Server"
-        android:id="@+id/Button_ConnectToServer"
-        android:layout_gravity="center_horizontal"
-        android:textColor="#000000"
-        android:onClick="connect_to_server"
-        android:hint='"this is hint"'
-        android:textSize="14dp"
-        android:textStyle="normal" />
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Clear AC Track"
-        android:id="@+id/Button_ShowFlightZone"
-        android:layout_gravity="center_horizontal"
-        android:textColor="#000000"
-        android:onClick="clear_ac_track"
-        android:hint='"this is hint"'
-        android:textSize="14dp"
-        android:textStyle="normal" />
+        android:id="@+id/toggleButton_createPlane"
+        android:textOff="@string/app_control_create_new_shape_off"
+        android:textOn="@string/app_control_create_new_shape_on"
+        android:onClick="onToggleButton_PlanClick"/>
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"></LinearLayout>
-
-
-
-    <ToggleButton
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Change visible AC Data"
-        android:id="@+id/toggleButton_TraceAircraft"
-        android:textSize="14dp"
-        android:textOn="Following AC"
-        android:textOff="Follow AC"
-        android:onClick="trace_ac"
-        android:checked="false" />
-
-
-
-    <View
+        android:id="@+id/tab1"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginBottom="1dp"
-        android:layout_alignParentBottom="true"
-        android:background="#DADADC" ></View>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/Show"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:textSize="18dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginBottom="4dp"
-        android:layout_alignParentBottom="true"
-        android:textStyle="bold"
-        android:text="View"
-        android:layout_marginTop="10dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Re-Connect to Server"
+            android:id="@+id/Button_ConnectToServer"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:onClick="connect_to_server"
+            android:hint='"this is hint"'
+            android:textSize="14dp"
+            android:textStyle="normal" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginBottom="1dp"
-        android:layout_alignParentBottom="true"
-        android:background="#DADADC" ></View>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear AC Track"
+            android:id="@+id/Button_ShowFlightZone"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:onClick="clear_ac_track"
+            android:hint='"this is hint"'
+            android:textSize="14dp"
+            android:textStyle="normal" />
 
-    <ToggleButton
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Change visible AC Data"
-        android:id="@+id/toggleButtonVisibleAc"
-        android:textSize="14dp"
-        android:textOn="Show All ACs"
-        android:textOff="Only Selected AC"
-        android:onClick="change_visible_acdata"
-        android:checked="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:textSize="18dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginBottom="4dp"
-        android:layout_alignParentBottom="true"
-        android:textStyle="bold"
-        android:text="Aircrafts"
-        android:layout_marginTop="10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DADADC" ></View>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginBottom="1dp"
-        android:layout_alignParentBottom="true"
-        android:background="#DADADC" ></View>
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change visible AC Data"
+                android:id="@+id/toggleButton_TraceAircraft"
+                android:textSize="14dp"
+                android:textOn="Following AC"
+                android:textOff="Follow AC"
+                android:onClick="trace_ac"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/Show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_alignParentBottom="true"
+                android:textStyle="bold"
+                android:text="View"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DADADC" ></View>
+
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change visible AC Data"
+                android:id="@+id/toggleButtonVisibleAc"
+                android:textSize="14dp"
+                android:textOn="Show All ACs"
+                android:textOff="Only Selected AC"
+                android:onClick="change_visible_acdata"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_alignParentBottom="true"
+                android:textStyle="bold"
+                android:text="Aircrafts"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DADADC" ></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 </LinearLayout>

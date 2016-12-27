@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
-
-    <ImageView
-        android:layout_width="240dp"
-        android:layout_height="140dp"
-        android:id="@+id/imageView_Pfd"
-        android:layout_gravity="center_horizontal|left|top"
-
-        android:background="@drawable/pdf_initial"
-        android:layout_marginTop="0dp"
-        android:adjustViewBounds="true" />
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
 
     <ImageButton
         android:layout_width="60dp"
@@ -19,7 +10,8 @@
         android:id="@+id/imageLaunch"
         android:src="@drawable/launch"
         android:layout_below="@+id/imageView_Pfd"
-        android:onClick="launch_ac" />
+        android:onClick="launch_ac"
+        android:background="#212121"/>
 
     <ImageButton
         android:layout_width="60dp"
@@ -28,7 +20,8 @@
         android:layout_alignBottom="@+id/imageLaunch"
         android:src="@drawable/resurrect"
         android:onClick="resurrect_ac"
-        android:layout_toLeftOf="@+id/imageAlt" />
+        android:layout_toLeftOf="@+id/imageAlt"
+        android:background="#212121"/>
 
     <ImageButton
         android:layout_width="60dp"
@@ -37,7 +30,8 @@
         android:layout_alignBottom="@+id/imageLaunch"
         android:src="@drawable/kill"
         android:layout_toRightOf="@+id/imageLaunch"
-        android:onClick="kill_ac" />
+        android:onClick="kill_ac"
+        android:background="#212121"/>
 
     <ImageButton
         android:layout_width="60dp"
@@ -46,7 +40,8 @@
         android:layout_alignBottom="@+id/imageLaunch"
         android:src="@drawable/set_alt"
         android:onClick="show_alt_dialog"
-        android:layout_alignRight="@+id/imageView_Pfd" />
+        android:layout_alignRight="@+id/imageView_Pfd"
+        android:background="#212121"/>
 
     <!-- title -->
     <View
@@ -88,5 +83,16 @@
         android:background="#DADADC"
         android:layout_alignParentStart="false"
         android:layout_below="@+id/header"></View>
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageView_Pfd"
+        android:layout_gravity="center_horizontal|left|top"
+
+        android:background="@drawable/pdf_initial"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
 
 </RelativeLayout>

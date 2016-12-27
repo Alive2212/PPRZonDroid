@@ -4,22 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!-- The main content view -->
-
-
-
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-
-
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/map"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:name="com.google.android.gms.maps.MapFragment"
                 android:layout_weight="2" />
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
@@ -28,8 +22,6 @@
             android:paddingTop="3dp"
             android:layout_gravity="top"
             android:paddingRight="5dp">
-
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,8 +30,8 @@
                 android:layout_marginLeft="3dp" />
             <View
                 android:layout_width="5dp"
-                android:layout_height="fill_parent"></View>
-
+                android:layout_height="fill_parent">
+            </View>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -57,8 +49,8 @@
                 android:background="#DADADC"
                 android:layout_marginTop="0dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"></View>
-
+                android:layout_marginRight="4dp">
+            </View>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +58,8 @@
                 android:src="@drawable/speed" />
             <View
                 android:layout_width="5dp"
-                android:layout_height="fill_parent"></View>
+                android:layout_height="fill_parent">
+            </View>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -87,7 +80,8 @@
                 android:background="#DADADC"
                 android:layout_marginTop="0dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"></View>
+                android:layout_marginRight="4dp">
+            </View>
 
 
 
@@ -98,7 +92,8 @@
                 android:src="@drawable/altitude" />
             <View
                 android:layout_width="5dp"
-                android:layout_height="fill_parent"></View>
+                android:layout_height="fill_parent">
+            </View>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,7 +113,8 @@
                 android:background="#DADADC"
                 android:layout_marginTop="0dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"></View>
+                android:layout_marginRight="4dp">
+            </View>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -127,7 +123,8 @@
                 android:src="@drawable/gps" />
             <View
                 android:layout_width="5dp"
-                android:layout_height="fill_parent"></View>
+                android:layout_height="fill_parent">
+            </View>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -147,7 +144,8 @@
                 android:background="#DADADC"
                 android:layout_marginTop="0dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"></View>
+                android:layout_marginRight="4dp">
+            </View>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -156,7 +154,8 @@
                 android:src="@drawable/battery" />
             <View
                 android:layout_width="5dp"
-                android:layout_height="fill_parent"></View>
+                android:layout_height="fill_parent">
+            </View>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -177,7 +176,8 @@
                 android:background="#DADADC"
                 android:layout_marginTop="0dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"></View>
+                android:layout_marginRight="4dp">
+            </View>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -188,7 +188,8 @@
             <View
                 android:layout_width="5dp"
                 android:layout_height="fill_parent"
-                android:id="@+id/space" ></View>
+                android:id="@+id/space" >
+            </View>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -207,7 +208,8 @@
                 android:background="#DADADC"
                 android:layout_marginTop="0dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"></View>
+                android:layout_marginRight="4dp">
+            </View>
 
 
         </LinearLayout>
@@ -233,7 +235,8 @@
             <View
                 android:layout_width="5dp"
                 android:layout_height="fill_parent"
-                android:id="@+id/space2" ></View>
+                android:id="@+id/space2" >
+            </View>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -253,7 +256,8 @@
                 android:background="#DADADC"
                 android:layout_marginTop="0dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"></View>
+                android:layout_marginRight="4dp">
+            </View>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -264,7 +268,8 @@
 
             <View
                 android:layout_width="5dp"
-                android:layout_height="fill_parent"></View>
+                android:layout_height="fill_parent">
+            </View>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -284,7 +289,8 @@
                 android:background="#DADADC"
                 android:layout_marginTop="0dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"></View>
+                android:layout_marginRight="4dp">
+            </View>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -301,7 +307,8 @@
             <View
                 android:layout_width="5dp"
                 android:layout_height="fill_parent"
-                android:id="@+id/space3"></View>
+                android:id="@+id/space3">
+            </View>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -310,8 +317,6 @@
                 />
 
         </LinearLayout>
-
-
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="240dp"
@@ -324,24 +329,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="right|top" />
-
             </LinearLayout>
-
     </FrameLayout>
-
-
-
-
     <!-- The navigation drawer -->
     <fragment android:name="com.PPRZonDroid.Left_Menu_Class"
         android:id="@+id/left_fragment"
         android:layout_width="@dimen/left_menu_width"
         android:layout_height="match_parent"
         android:layout_gravity="left"/>
-
-
-
-
-
-
 </android.support.v4.widget.DrawerLayout>
